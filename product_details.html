@@ -23,6 +23,15 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- responsive css -->
   <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- touchspin -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.3.0/jquery.bootstrap-touchspin.min.css">
+  <!-- anitabs -->
+  <link rel="stylesheet" href="./assets/css/anitabs.css">
+  <!-- venobox -->
+  <link rel="stylesheet" href="./assets/css/venobox.css">
+
 </head>
 
 <body>
@@ -223,6 +232,8 @@
     </div>
   </nav>
   <!-- navigation end -->
+
+
 
   <!-- offcanvas -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -433,215 +444,844 @@
   </section>
   <!-- mobile search end -->
 
+
+
   <!-- ================ HTML breadcrumbs_bg START ================ -->
-    <section class="breadcrumb_bg">
-      <div class="container">
-        <div class="tille">
-          <p>
-            <span class="icon">
-              <iconify-icon icon="material-symbols-light:home-outline-rounded" width="24" height="24"></iconify-icon>
-            </span>
-            &nbsp > &nbsp
-            <span>Category</span> > <span>Vegetables</span> > <span>Wishlist</span>
-          </p>
-        </div>
+  <section class="breadcrumb_bg">
+    <div class="container">
+      <div class="tille">
+        <p>
+          <span class="icon">
+            <iconify-icon icon="material-symbols-light:home-outline-rounded" width="24" height="24"></iconify-icon>
+          </span>
+          &nbsp > &nbsp
+          <!-- <span>Category</span> > <span>Vegetables</span> > <span>Wishlist</span> -->
+          <span>Category</span> > <span>Vegetables</span> >
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
   <!-- ================ HTML breadcrumbs_bg END ================ -->
 
 
   <!-- ================ HTML product_details START ================ -->
-    <section id="product_details">
-      <div class="container">
-        <div class="row">
+  <section id="product_details">
+    <div class="container">
+      <div class="row">
 
-          <!-- <div class="col-lg-6 bg-info py-5"> -->
-          <div class="col-lg-5 py-5">
-            <div class="row">
-              <div class="col-lg-3 order-lg-1 order-2 slider-nav"> 
-                <div class="wrapper_image">
-                  <img class="img-fluid" src="assets/images/products/1.png" alt="">
-                </div>
-                <div class="wrapper_image">
-                  <img class="img-fluid" src="assets/images/products/2.png" alt="">
-                </div>
-                <div class="wrapper_image">
-                  <img class="img-fluid" src="assets/images/products/3.png" alt="">
-                </div>
-                <div class="wrapper_image">
-                  <img class="img-fluid" src="assets/images/products/4.png" alt="">
-                </div>
-                <div class="wrapper_image">
-                  <img class="img-fluid" src="assets/images/products/1.png" alt="">
-                </div>
+        <!-- <div class="col-lg-6 bg-info py-5"> -->
+        <div class="col-lg-5 py-5">
+          <div class="row">
+            <div class="col-lg-3 order-lg-1 order-2 slider-nav">
+              <div class="wrapper_image">
+                <img class="img-fluid" src="assets/images/products/1.png" alt="">
               </div>
-              <div class="col-lg-9 order-lg-2 order-1 slider-for">
-                <div>
-                  <img class="img-fluid example" src="assets/images/products/1.png" alt="">
-                </div>
-                <div>
-                  <img class="img-fluid example" src="assets/images/products/2.png" alt="">
-                </div>
-                <div>
-                  <img class="img-fluid example" src="assets/images/products/3.png" alt="">
-                </div>
-                <div>
-                  <img class="img-fluid example" src="assets/images/products/4.png" alt="">
-                </div>
-                <div>
-                  <img class="img-fluid example" src="assets/images/products/1.png" alt="">
-                </div>
-  
+              <div class="wrapper_image">
+                <img class="img-fluid" src="assets/images/products/2.png" alt="">
               </div>
+              <div class="wrapper_image">
+                <img class="img-fluid" src="assets/images/products/3.png" alt="">
+              </div>
+              <div class="wrapper_image">
+                <img class="img-fluid" src="assets/images/products/4.png" alt="">
+              </div>
+              <div class="wrapper_image">
+                <img class="img-fluid" src="assets/images/products/1.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-9 order-lg-2 order-1 slider-for">
+              <div>
+                <img class="img-fluid example" src="assets/images/products/1.png" alt="">
+              </div>
+              <div>
+                <img class="img-fluid example" src="assets/images/products/2.png" alt="">
+              </div>
+              <div>
+                <img class="img-fluid example" src="assets/images/products/3.png" alt="">
+              </div>
+              <div>
+                <img class="img-fluid example" src="assets/images/products/4.png" alt="">
+              </div>
+              <div>
+                <img class="img-fluid example" src="assets/images/products/1.png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-7 py-5 product">
+          <!-- Details of prod ...  -->
+          <div class="product_name">
+            <h4>Chinese Cabbage</h4>
+            <span>In Stock</span>
+          </div>
+
+          <div class="rate">
+            <ul>
+              <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+              <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+              <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+              <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+              <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+              <span class="review">4 Review</span>
+            </ul>
+
+            <div class="SKU">
+              <b>SKU:</b>
+              <span>2,51,594</span>
             </div>
           </div>
 
+          <div class="price" data-price="17.28">
+            <del>$48.00</del>
+            <b class="price_discounted">$17.28</b>
+            <span>64% Off</span>
+          </div>
 
-          <div class="col-lg-7 py-5 product">
-            <!-- Details of prod ...  -->
-            <div class="product_name">
-              <h4>Chinese Cabbage</h4>
-              <span>In Stock</span>
+          <div class="row brand_row justify-content-between align-items-center">
+
+            <div class="col-lg-2">
+              <div class="brand d-flex align-items-center">
+                <span>Brand</span>
+                <img src="assets/images/prod_details/brand.png" alt="">
+              </div>
             </div>
 
-            <div class="rate">
-              <ul>
-                <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
-                <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
-                <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
-                <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
-                <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
-              </ul>
+            <div class="col-lg-6">
+              <div class="share">
+                <p>Share</p>
+                <div class="icons">
+                  <span><iconify-icon icon="gg:facebook" width="24" height="24"></iconify-icon></span>
+                  <span><iconify-icon icon="fa6-brands:x-twitter" width="24" height="24"></iconify-icon></span>
+                  <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+                  <span><iconify-icon icon="akar-icons:instagram-fill" width="24" height="24"></iconify-icon></span>
+                </div>
+              </div>
             </div>
 
+          </div>
 
+          <div class="description">
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+              per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec,
+              ultrices et ipsum. Nulla varius magna a consequat pulvinar. </p>
+          </div>
+
+          <div class="row cart_row align-items-center">
+            <div class="col-lg-3 d-flex justify-content-start px-lg-3">
+              <div class="counter-wrapper">
+                <input type="text" value="1" name="counter">
+              </div>
+            </div>
+            <div class="col-lg-7 px-0 cart">
+              <button class="cart_btn add-to-cart"> Add to Cart <span> <iconify-icon icon="ph:handbag-bold" width="24"
+                    height="24"></iconify-icon> </span> </button>
+            </div>
+            <div class="col-lg-2 wishlist">
+              <span class="heart"> <iconify-icon icon="si:heart-line" width="24" height="24"></iconify-icon> </span>
+            </div>
+          </div>
+          <div class="tags">
+            <p> <b>Category:</b> Vegetables </p>
+            <p> <b>Tag:</b> Vegetables Healthy <a href="#">Chinese</a> Cabbage Green Cabbage </p>
           </div>
 
         </div>
+
+
+
       </div>
-    </section>
+    </div>
+  </section>
   <!-- ================ HTML product_details END ================ -->
 
 
 
-<!-- ================ HTML COMMENT START ================ -->
+  <!-- ================ HTML descriptions START ================ -->
+  <!-- manual + (A. - try) -->
+  <div id="descriptions">
+    <div class="container">
 
-<!-- ================ HTML COMMENT END ================ -->
+      <div class="tabs js-tabs">
 
+        <div class="tabs-nav js-tabs-nav" id="example">
+
+          <ul class="tabs-nav__list">
+
+            <li class="tabs-nav__item js-tabs-item active">
+              <a class="tabs-nav__link js-tabs-link" href="#tab-1">Descriptions</a>
+            </li>
+            <li class="tabs-nav__item js-tabs-item">
+              <a class="tabs-nav__link js-tabs-link" href="#tab-2">Additional Information</a>
+            </li>
+            <li class="tabs-nav__item js-tabs-item">
+              <a class="tabs-nav__link js-tabs-link" href="#tab-3">Customer Feedback</a>
+            </li>
+
+          </ul>
+          <span class="tabs-nav__drag js-tabs-drag"></span>
+        </div>
+
+
+        <div class="tabs-content js-tabs-wrap">
+
+          <div class="tab js-tabs-content active" id="tab-1">
+            <div class="row justify-content-between" style="width: 100%;">
+
+              <div class="col-lg-6 contains_2">
+                <p>Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra
+                  at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor
+                  tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum
+                  sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed
+                  et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo
+                  a convallis. </p>
+                <p>Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus
+                  faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque
+                  mi eget nulla. Proin luctus elementum neque et pharetra. </p>
+                <ul>
+                  <li>
+                    <span><iconify-icon icon="tabler:check" width="14" height="14"></iconify-icon></span>
+                    <p class="m-0">100 g of fresh leaves provided.</p>
+                  </li>
+                  <li>
+                    <span><iconify-icon icon="tabler:check" width="14" height="14"></iconify-icon></span>
+                    <p class="m-0">Aliquam ac est at augue volutpat elementum.</p>
+                  </li>
+                  <li>
+                    <span><iconify-icon icon="tabler:check" width="14" height="14"></iconify-icon></span>
+                    <p class="m-0">Quisque nec enim eget sapien molestie.</p>
+                  </li>
+                  <li>
+                    <span><iconify-icon icon="tabler:check" width="14" height="14"></iconify-icon></span>
+                    <p class="m-0">Proin convallis odio volutpat finibus posuere.</p>
+                  </li>
+                </ul>
+                <p>Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros non
+                  turpis lobortis iaculis at ut massa. </p>
+              </div>
+
+              <div class="col-lg-5 video">
+                <a class="venobox" data-gall="gall-video" data-autoplay="true" data-vbtype="video" data-ratio="4x3"
+                  href="#">
+                  <img class="img-fluid" src="./assets/images/prod_details/thumbnail-1.png" alt="">
+                </a>
+
+                <div class="row">
+
+                  <div class="col-6 discount">
+
+                    <div class="icon">
+                      <span><iconify-icon icon="fluent:tag-percent-24-regular" width="26"
+                          height="26"></iconify-icon></span>
+                    </div>
+
+                    <div class="text">
+                      <h4>64% Discount</h4>
+                      <p>Save your 64% money with us</p>
+                    </div>
+
+                  </div>
+
+                  <div class="col-6 discount">
+
+                    <div class="icon">
+                      <span><iconify-icon icon="garden:leaf-stroke-16" width="26" height="26"></iconify-icon></span>
+                    </div>
+                    <div class="text">
+                      <h4>100% Organic</h4>
+                      <p>100% Organic Vegetables</p>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab js-tabs-content" id="tab-2">
+            <div class="row justify-content-between">
+              <div class="col-lg-6 additional">
+                <div class="row">
+                  <div class="col-4 type">
+                    <h6 class="m-0">Weight:</h6>
+                    <h6 class="m-0">Color:</h6>
+                    <h6 class="m-0">Type:</h6>
+                    <h6 class="m-0">Category:</h6>
+                    <h6 class="m-0">Stock Status:</h6>
+                    <h6 class="m-0">Tags:</h6>
+                  </div>
+
+                  <div class="col-8 type">
+                    <p class="m-0">03</p>
+                    <p class="m-0">Green</p>
+                    <p class="m-0">Organic</p>
+                    <p class="m-0">Vegetables</p>
+                    <p class="m-0">Available (5,413)</p>
+                    <p class="m-0">Vegetables,
+                      Healthy,
+                      <a href="">Chinese,</a>
+                      Cabbage,
+                      Green Cabbage,
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 video">
+                <a class="venobox" data-gall="gall-video" data-autoplay="true" data-vbtype="video" data-ratio="4x3"
+                  href="#">
+                  <img class="img-fluid" src="./assets/images/prod_details/thumbnail-1.png" alt="">
+                </a>
+                <div class="row">
+                  <div class="col-6 discount">
+                    <div class="icon">
+                      <span><iconify-icon icon="fluent:tag-percent-24-regular" width="26"
+                          height="26"></iconify-icon></span>
+                    </div>
+                    <div class="text">
+                      <h4>64% Discount</h4>
+                      <p>Save your 64% money with us</p>
+                    </div>
+                  </div>
+                  <div class="col-6 discount">
+                    <div class="icon">
+                      <span><iconify-icon icon="garden:leaf-stroke-16" width="26" height="26"></iconify-icon></span>
+                    </div>
+                    <div class="text">
+                      <h4>100% Organic</h4>
+                      <p>100% Organic Vegetables</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab js-tabs-content" id="tab-3">
+            <div class="feedback">
+              <div class="row first_row">
+                <div class="col-lg-7 comment">
+                  <div class="row justify-content-between">
+
+                    <div class="col-6 user_details">
+                      <div class="image">
+                        <img class="img-fluid" src="./assets/images/customers/1.png" alt="">
+                      </div>
+                      <div class="rate">
+                        <h4>Kristin Watson</h4>
+                        <ul>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-4 date">
+                      <p class="m-0">2 min ago</p>
+                    </div>
+
+                  </div>
+                  <p class="text">Duis at ullamcorper nulla, eu dictum eros.</p>
+                </div>
+              </div>
+
+              <div class="row first_row">
+                <div class="col-lg-7 comment">
+                  <div class="row justify-content-between">
+                    <div class="col-6 user_details">
+                      <div class="image">
+                        <img class="img-fluid" src="./assets/images/customers/2.png" alt="">
+                      </div>
+                      <div class="rate">
+                        <h4>Jane Cooper</h4>
+                        <ul>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 date">
+                      <p class="m-0">30 Apr, 2021</p>
+                    </div>
+                  </div>
+                  <p class="text">Keep the soil evenly moist for the healthiest growth. If the sun
+                    gets too hot, Chinese cabbage tends to "bolt" or go to seed; in long periods of
+                    heat, some kind of shade may be helpful. Watch out for snails, as they will harm
+                    the plants.</p>
+                </div>
+              </div>
+
+              <div class="row first_row">
+                <div class="col-lg-7 comment">
+                  <div class="row justify-content-between">
+                    <div class="col-6 user_details">
+                      <div class="image">
+                        <img class="img-fluid" src="./assets/images/customers/3.png" alt="">
+                      </div>
+                      <div class="rate">
+                        <h4>Jacob Jones</h4>
+                        <ul>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-4 date">
+                      <p class="m-0">2 min ago</p>
+                    </div>
+                  </div>
+                  <p class="text"> Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row first_row">
+                <div class="col-lg-7 comment">
+                  <div class="row justify-content-between">
+                    <div class="col-6 user_details">
+                      <div class="image">
+                        <img class="img-fluid" src="./assets/images/customers/4.png" alt="">
+                      </div>
+                      <div class="rate">
+                        <h4>Ralph Edwards</h4>
+                        <ul>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                          <li><span><iconify-icon icon="twemoji:star" width="14" height="14"></iconify-icon></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-4 date">
+                      <p class="m-0">2 min ago</p>
+                    </div>
+                  </div>
+                  <p class="text">200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO
+                    Productive Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from
+                    USA
+                  </p>
+                </div>
+              </div>
+
+              <div class="load">
+                <a href="#">Load More</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  <!-- manual + (A. try) - end -->
+  <!-- ================ HTML descriptions END ================ -->
+
+
+
+  <!-- ================ HTML related products START ================ -->
+  <section id="related_products">
+    <div class="container">
+      <div class="head">
+        <h4>Related Products</h4>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="row">
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>Apple</h4>
+                    <b>14.99 $</b> <del> 21.99 $</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>Apple</h4>
+                    <b>14.99 $</b> <del> 21.99 $</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>Apple</h4>
+                    <b>14.99 $</b> <del> 21.99 $</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>Apple</h4>
+                    <b>14.99 $</b> <del> 21.99 $</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ================ HTML related products END ================ -->
+
+
+
+
+
+
+
+  <!-- newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <h4>Subcribe to our Newsletter</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, accusantium.</p>
+        </div>
+        <div class="col-lg-5">
+          <form action="">
+            <input type="text" name="" id="" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-2 icons">
+          <span><iconify-icon icon="gg:facebook" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="fa6-brands:x-twitter" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="akar-icons:instagram-fill" width="24" height="24"></iconify-icon></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newsletter end -->
 
 
   <!-- ================ HTML footer START ================ -->
-    <footer id="footer">
-      <div class="container">
+  <footer id="footer">
+    <div class="container">
 
-        <div class="row first_row">
+      <div class="row first_row">
 
-          <div class="col-lg-4 first">
-            <a href=""><img src="assets/images/Logo2.png" alt=""></a>
-            <p class="contains">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
-            <p><b>(219) 555-0114</b> or <b>ecobazar@gmail.com</b></p>
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>My Account</h4>
-              </div>
-
-              <ul>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Order History</a></li>
-                <li><a href="">Shoping Cart</a></li>
-                <li><a href="">Wishlist</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Help</h4>
-              </div>
-
-              <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Faqs</a></li>
-                <li><a href="">Terms & Condition</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Proxy</h4>
-              </div>
-
-              <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">Track Order</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Categories</h4>
-              </div>
-
-              <ul>
-                <li><a href="">Fruit & Vegetables</a></li>
-                <li><a href="">Meat & Fish</a></li>
-                <li><a href="">Bread & Bakery</a></li>
-                <li><a href="#">Beauty & Health</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-        
+        <div class="col-lg-4 first">
+          <a href=""><img src="assets/images/Logo2.png" alt=""></a>
+          <p class="contains">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum
+            magna congue nec.</p>
+          <p><b>(219) 555-0114</b> or <b>ecobazar@gmail.com</b></p>
         </div>
 
-        <div class="row second_row justify-content-between">
-          <div class="col-lg-4 order-lg-1 order-2">
-            <div class="footer_title">
-              <p>Ecobazar eCommerce © 2025. All Rights Reserved.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 order-lg-2 order-1">
-            <div class="payment">
-              <a href="#"><img src="assets/images/payment/1. ApplePay.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/2. Visa.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/3. Discover.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/4. Mastercard.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/5. SPay.png" alt=""></a>
+        <div class="col-lg-2 others">
 
+          <div>
+
+            <div class="head">
+              <h4>My Account</h4>
             </div>
+
+            <ul>
+              <li><a href="">My Account</a></li>
+              <li><a href="">Order History</a></li>
+              <li><a href="">Shoping Cart</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+
           </div>
+
         </div>
-        
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Help</h4>
+            </div>
+
+            <ul>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Faqs</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Proxy</h4>
+            </div>
+
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Track Order</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Categories</h4>
+            </div>
+
+            <ul>
+              <li><a href="">Fruit & Vegetables</a></li>
+              <li><a href="">Meat & Fish</a></li>
+              <li><a href="">Bread & Bakery</a></li>
+              <li><a href="#">Beauty & Health</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
       </div>
-    </footer>
+
+      <div class="row second_row justify-content-between">
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="footer_title">
+            <p>Ecobazar eCommerce © 2025. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 order-lg-2 order-1">
+          <div class="payment">
+            <a href="#"><img src="assets/images/payment/1. ApplePay.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/2. Visa.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/3. Discover.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/4. Mastercard.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/5. SPay.png" alt=""></a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
   <!-- ================ HTML footer END ================ -->
-        
+
 
   <!-- jquery -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -655,10 +1295,68 @@
   <script src="assets/js/slick.min.js"></script>
   <!-- zoomsl -->
   <script src="assets/js/zoomsl.js"></script>
+  <!-- touchspin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.3.0/jquery.bootstrap-touchspin.min.js"></script>
   <!-- filter -->
   <script src="assets/js/category-filter.js"></script>
   <!-- custom js -->
   <script src="assets/js/app.js"></script>
+
+  <script src="assets/js/anitabs.js"></script>
+  <script src="assets/js/pagination.js"></script>
+  <script src="assets/js/syotimer.examples.js"></script>
+  <script src="assets/js/venobox.min.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabsNav = document.querySelectorAll('.js-tabs-link');
+      const tabsContent = document.querySelectorAll('.js-tabs-content');
+      const tabsItems = document.querySelectorAll('.js-tabs-item');
+      const tabsDrag = document.querySelector('.js-tabs-drag');
+
+      // Set initial drag position
+      if (tabsItems.length > 0 && tabsDrag) {
+        updateDragPosition(tabsItems[0]);
+      }
+
+      tabsNav.forEach((link, index) => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Remove active class from all tabs and items
+          tabsContent.forEach(content => {
+            content.classList.remove('active');
+          });
+          tabsItems.forEach(item => {
+            item.classList.remove('active');
+          });
+
+          // Add active class to clicked tab
+          const targetId = this.getAttribute('href');
+          const targetContent = document.querySelector(targetId);
+          const targetItem = this.closest('.js-tabs-item');
+
+          if (targetContent) {
+            targetContent.classList.add('active');
+          }
+          if (targetItem) {
+            targetItem.classList.add('active');
+            updateDragPosition(targetItem);
+          }
+        });
+      });
+
+      function updateDragPosition(activeItem) {
+        if (!tabsDrag) return;
+        const left = activeItem.offsetLeft;
+        const width = activeItem.offsetWidth;
+        tabsDrag.style.left = left + 'px';
+        tabsDrag.style.width = width + 'px';
+      }
+    });
+  </script>
+
 </body>
 
 </html>

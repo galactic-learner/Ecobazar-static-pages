@@ -39,13 +39,14 @@ $(function () {
 
     // timer
     $("#getting-started")
-        .countdown("2026/02/01", function (event) {
+        .countdown("2029/02/01", function (event) {
             // $(this).text(event.strftime('%W weeks %D days %H:%M:%S'));
             $('.sec').text(event.strftime('%S'));
             $('.min').text(event.strftime('%M'));
             $('.hour').text(event.strftime('%H'));
             $('.day').text(event.strftime('%D'));
         });
+
 
     // ad section
     // window.addEventListener('load', function () {
@@ -79,24 +80,83 @@ $(function () {
             {
                 breakpoint: 1024,
                 settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                vertical: false,
-                arrows: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    vertical: false,
+                    arrows: false,
                 }
             },
         ]
     });
 
     // ZOOMSL
-    $(function(){
+    $(function () {
         $(".example").imagezoomsl();
     });
+
+    // counter
+    $('#getting-started2').countdown('2030/01/01', function (event) {
+        $(this).html(event.strftime('<span>%d <p>days</p></span> : <span>%H <p>Hours</p> </span>:<span>%M <p>MINS</p> </span>:<span>%S <p>Secs</p> </span>'));
+    });
+
+
+
+/* ================ JS manual + (A. try) START ================ */
+
+// counter (prod details)
+
+// touch_spin
+$("input[name='counter']").TouchSpin({
+    min: 1,
+    max: 5,
+    decimals: 0,
+    buttondown_txt: '-',
+    buttonup_txt: '+',
+    forcestepdivisibility: 'round',
+    mousewheel: false,
+});
+
+// product_price
+$(".product").each(function () {
+    let $product = $(this);
+    let basePrice = parseFloat($product.find(".price").data("price"));
+    let $priceElement = $product.find(".price_discounted");
+    let $qtyInput = $product.find("input[name='counter']");
+
+    function updatePrice() {
+        let qty = parseInt($qtyInput.val());
+        let total = (basePrice * qty).toFixed(2);
+        $priceElement.text("$" + total);
+    }
+
+    // Update price on change
+    $qtyInput.on("change touchspin.on.stopspin", function () {
+        updatePrice();
+    });
+
+    // Set initial price
+    updatePrice();
+});
+
+// tabs 
+$(".js-tabs-link").aniTabs({
+    animation: "slide",
+    slideDirection: "left",
+    autoHeight: true,
+});
+
+// pagination
+$(document).ready(function () {
+    generatePagination('.js-pagination', '.js-pagination-item', 12, '<iconify-icon icon="iconamoon:arrow-left-2" width="24" height="24"></iconify-icon>', '<iconify-icon icon="iconamoon:arrow-right-2" width="24" height="24"></iconify-icon>');
+});
 
 
 });
 
 
+
+
+/* ================ JS manual + (A. try) END ================ */
 
 
 

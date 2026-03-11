@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- fav -->
   <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon" />
-  <title>Ecobazar | Home</title>
+  <title>Ecobazar | Checkout</title>
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -432,119 +432,336 @@
   </section>
   <!-- mobile search end -->
 
-
-
-    <!-- footer -->
-    <footer id="footer">
-      <div class="container">
-
-        <div class="row first_row">
-
-          <div class="col-lg-4 first">
-            <a href=""><img src="assets/images/Logo2.png" alt=""></a>
-            <p class="contains">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
-            <p><b>(219) 555-0114</b> or <b>ecobazar@gmail.com</b></p>
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>My Account</h4>
-              </div>
-
-              <ul>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Order History</a></li>
-                <li><a href="">Shoping Cart</a></li>
-                <li><a href="">Wishlist</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Help</h4>
-              </div>
-
-              <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Faqs</a></li>
-                <li><a href="">Terms & Condition</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Proxy</h4>
-              </div>
-
-              <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">Track Order</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Categories</h4>
-              </div>
-
-              <ul>
-                <li><a href="">Fruit & Vegetables</a></li>
-                <li><a href="">Meat & Fish</a></li>
-                <li><a href="">Bread & Bakery</a></li>
-                <li><a href="#">Beauty & Health</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-        
-        </div>
-
-        <div class="row second_row justify-content-between">
-          <div class="col-lg-4 order-lg-1 order-2">
-            <div class="footer_title">
-              <p>Ecobazar eCommerce © 2025. All Rights Reserved.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 order-lg-2 order-1">
-            <div class="payment">
-              <a href="#"><img src="assets/images/payment/1. ApplePay.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/2. Visa.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/3. Discover.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/4. Mastercard.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/5. SPay.png" alt=""></a>
-
-            </div>
-          </div>
-        </div>
-        
+  <!-- breadcrumb start -->
+  <section class="breadcrumb_bg">
+    <div class="container">
+      <div class="title">
+        <p>
+          <span class="icon">
+            <iconify-icon icon="material-symbols-light:home-outline-rounded" width="24" height="24"></iconify-icon>
+          </span>
+          &nbsp > &nbsp
+          <span>Shopping cart</span> > &nbsp <span>Checkout</span>
+        </p>
       </div>
-    </footer>
-    <!-- footer end -->
+    </div>
+  </section>
+  <!-- breadcrumb end -->
+
+
+  <!-- checkout section -->
+  <section id="billing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 billing_form">
+
+          <div class="form_head">
+            <h4>Billing Information</h4>
+          </div>
+
+          <form action="">
+            <div class="row name_row">
+
+              <div class="col-lg-4 px-2">
+                <label for="f_name">First name</label>
+                <input type="text" name="" id="f_name" placeholder="Your first name" required>
+              </div>
+
+              <div class="col-lg-4 px-2">
+                <label for="l_name">Last name</label>
+                <input type="text" name="" id="l_name" placeholder="Your last name" required>
+              </div>
+
+              <div class="col-lg-4 px-2">
+                <label for="c_name">Company Name <span class="optional">(optional)</span></label>
+                <input type="text" name="" id="c_name" placeholder="Company name">
+              </div>
+
+            </div>
+
+            <div class="row ">
+
+              <div class="col-lg-12 px-2">
+                <label for="address">Street Address</label>
+                <input type="text" name="" id="address" placeholder="Street Address" required>
+              </div>
+
+            </div>
+
+            <div class="row">
+              
+              <div class="col-lg-4 px-2">
+                <label for="country">Country / Region</label>
+
+                <select name="country" id="country" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="">Bangladesh</option>
+                  <option value="">India</option>
+                  <option value="">USA</option>
+                  <option value="">China</option>
+                  <option value="">Pakistan</option>
+                </select>
+              </div>
+
+              <div class="col-lg-4 px-2">
+                <label for="states">States</label>
+
+                <select name="states" id="states" required>
+                  <option value="" disabled selected>Select</option>
+                  <option value="">Chattogram</option>
+                  <option value="">Dhaka</option>
+                  <option value="">Rangpur</option>
+                  <option value="">Barishal</option>
+                  <option value="">Sylhet</option>
+                </select>
+              </div>
+
+              <div class="col-lg-4 px-2">
+                <label for="zip">Zip Code</label>
+
+                <input type="text" name="" id="zip" placeholder="Zip Code" required>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 px-2">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email address" required>
+              </div>
+
+              <div class="col-lg-6 px-2">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" placeholder="Phone number" required>
+              </div>
+            </div>
+
+
+            <div class="check">
+              <input type="checkbox" id="ship" name="ship_diff_loca">
+              <label for="ship">Ship to a different address</label>
+            </div>
+
+            <div class="additional">
+              <h4>Additional Info</h4>
+              <div class="order">
+                <label for="order">Order Notes (Optional)</label>
+                <input type="text" id="order" style="height: 100px;">
+              </div>
+            </div>
+
+
+        </div>
+
+                    <div class="col-lg-4">
+                        <div class="order-summary">
+                            <h3>Order Summary</h3>
+
+                            <!-- @php
+                                $cart = session('cart', []);
+                                $totalAmount = 0;
+                            @endphp -->
+
+
+                            <!-- @forelse ($cart as $data) -->
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-2">
+                                        <img width="50" class="img-fluid"
+                                            src="{{ asset('storage/product_images/' . $data['image']) }}" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-0 pb-0"></p>
+                                        <span>Price: </span>
+                                        <span>Qty: </span>
+                                    </div>
+                                </div>
+
+
+                               <!--  @php
+                                    $totalAmount += $data['price'] * $data['qty'];
+                                @endphp -->
+
+                            <!-- @empty -->
+                                <p class="text-danger text-center">No data found</p>
+                            <!-- @endforelse -->
+
+
+                            <div class="total_amount">
+                                <p>Subtotal: <span id="checkoutSubtotal">$ </span></p>
+                                <p>Shipping: <span>Free</span></p>
+                                <p>Total: <span id="checkoutTotal">$ </span></p>
+                            </div>
+                            <h4 class="payment_head">Payment Method</h4>
+                            <div class="payment_method">
+                                <label><input id="cod" style="width: 15px; height: 15px;" type="radio"
+                                        name="payment" value="cod" checked>
+                                    Cash on Delivery</label>
+                                <label><input id="online" style="width: 15px; height: 15px;" type="radio"
+                                        name="payment" value="online">
+                                    Online Payment </label>
+
+                            </div>
+                            <button type="submit" id="placeOrderBtn" checked>Place Order</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id="sslczPayBtn"
+                                token="if you have any token validation"
+                                postdata="your javascript arrays or objects which requires in backend"
+                                order="If you already have the transaction generated for current order"
+                                endpoint="{{ url('/pay-via-ajax') }}"> Pay Now
+                            </button>
+                        </div>
+                    </div>
+
+        </form>
+
+      </div>
+
+      <div class="col-lg-4">
+
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <!-- checkout section end -->
+
+
+  <!-- newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <h4>Subcribe to our Newsletter</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, accusantium.</p>
+        </div>
+        <div class="col-lg-5">
+          <form action="">
+            <input type="text" name="" id="" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-2 icons">
+          <span><iconify-icon icon="gg:facebook" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="fa6-brands:x-twitter" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="akar-icons:instagram-fill" width="24" height="24"></iconify-icon></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newsletter end -->
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container">
+
+      <div class="row first_row">
+
+        <div class="col-lg-4 first">
+          <a href=""><img src="assets/images/Logo2.png" alt=""></a>
+          <p class="contains">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum
+            magna congue nec.</p>
+          <p><b>(219) 555-0114</b> or <b>ecobazar@gmail.com</b></p>
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>My Account</h4>
+            </div>
+
+            <ul>
+              <li><a href="">My Account</a></li>
+              <li><a href="">Order History</a></li>
+              <li><a href="">Shoping Cart</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Help</h4>
+            </div>
+
+            <ul>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Faqs</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Proxy</h4>
+            </div>
+
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Track Order</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Categories</h4>
+            </div>
+
+            <ul>
+              <li><a href="">Fruit & Vegetables</a></li>
+              <li><a href="">Meat & Fish</a></li>
+              <li><a href="">Bread & Bakery</a></li>
+              <li><a href="#">Beauty & Health</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row second_row justify-content-between">
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="footer_title">
+            <p>Ecobazar eCommerce © 2025. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 order-lg-2 order-1">
+          <div class="payment">
+            <a href="#"><img src="assets/images/payment/1. ApplePay.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/2. Visa.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/3. Discover.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/4. Mastercard.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/5. SPay.png" alt=""></a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- footer end -->
 
 
 
