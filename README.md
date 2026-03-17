@@ -1,2 +1,2 @@
 # Ecobazar
-An Online E-Commerce Store.
+An Online E-Commerce Store (static pages).
