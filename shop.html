@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- fav -->
   <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon" />
-  <title>Ecobazar | Home</title>
+  <title>Ecobazar | Shop</title>
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,6 +23,15 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- responsive css -->
   <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <!-- touchspin -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.3.0/jquery.bootstrap-touchspin.min.css">
+  <!-- anitabs -->
+  <link rel="stylesheet" href="./assets/css/anitabs.css">
+  <!-- venobox -->
+  <link rel="stylesheet" href="./assets/css/venobox.css">
+
 </head>
 
 <body>
@@ -91,8 +100,8 @@
 
             <span class="bar"></span>
 
-            <div class="shopping_bag" <span><iconify-icon icon="heroicons:shopping-bag" width="32"
-                height="32"></iconify-icon></span>
+            <div class="shopping_bag"><span><iconify-icon icon="heroicons:shopping-bag" width="32"
+                  height="32"></iconify-icon></span>
               <span class="count">2</span>
               <div class="margin_l">
                 <p class="mb-0 shopping_text">Shopping cart:</p>
@@ -316,6 +325,803 @@
   </div>
   <!-- offcanvas end -->
 
+
+  <!-- breadcrumb start -->
+  <section class="shop_bg py-3" id="breadcrumb_bg" style="background-image: none;">
+    <div class="container">
+      <div class="title">
+        <p>
+          <span class="icon">
+            <iconify-icon icon="bitcoin-icons:home-outline" width="24" height="24"></iconify-icon>
+          </span>
+          &nbsp > &nbsp
+          <span>Categories</span>
+          >
+          <span>Vegetables</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb end -->
+
+  <!-- offer -->
+  <section id="offer">
+    <div class="container" style="background-image: url(assets/images/shop/shop_bg.png); height: 360px;">
+      <div class="contains">
+        <p>Best Deals</p>
+        <h4>Sale of the Month</h4>
+        <div id="getting-started2"></div>
+        <a href="#">Shop Now <span><iconify-icon icon="lineicons:arrow-right" width="25"
+              height="25"></iconify-icon></span></a>
+
+      </div>
+    </div>
+  </section>
+  <!-- offer end -->
+
+  <!-- ================ HTML all products START ================ -->
+  <div id="all_products">
+    <div class="container">
+      <div class="row product_nav justify-content-between py-3">
+        <div class="col-lg-5">
+          <div class="row">
+
+            <div class="col-lg-4 select_product px-2 prod_type">
+              <div class="filter_button">
+                <select class="form-select" name="" id="">
+                  <option selected>Select Category</option>
+                  <option value="1">One </option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 select_product px-2 ">
+              <select class="form-select" name="" id="">
+                <option selected>Select Price</option>
+                <option value="1">One </option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-lg-4 select_product px-2 ">
+              <select class="form-select" name="" id="">
+                <option selected>Select Rating</option>
+                <option value="1">One </option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <select class="form-select" name="" id="">
+                <option selected>Sort by: latest</option>
+                <option value="1">One </option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-lg-6">
+              <select class="form-select" name="" id="">
+                <option selected>Show: 16</option>
+                <option value="1">One </option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="row product_row justify-content-between">
+        <div class="row">
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          <!-- start product card 2 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 2 -->
+
+          <!-- start product card 3 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 3 -->
+
+          <!-- start product card 4 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 4 -->
+
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          <!-- start product card 2 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 2 -->
+
+          <!-- start product card 3 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 3 -->
+
+          <!-- start product card 4 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 4 -->
+
+
+          <!-- start product card 1 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 1 -->
+
+          <!-- start product card 2 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 2 -->
+
+          <!-- start product card 3 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <!-- <div class="filter_body"> -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 3 -->
+
+          <!-- start product card 4 -->
+          <div class="card_contains js-pagination-item">
+            <!-- filter body -->
+            <div class="">
+
+              <div class="filter fruit">
+                <span class="sale">Sale 50%</span>
+                <img class="img-fluid" src="assets/images/products/1.png">
+
+                <div class=" card_details justify-content-between">
+                  <div class="first_content">
+                    <h4>title</h4>
+                    <b>price BDT</b><del>discount_price BDT</del>
+
+                    <ul class="rating">
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon></li>
+                      <li class="non_active"><iconify-icon icon="ic:round-star" width="14" height="14"></iconify-icon>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class=" card_bag">
+                    <a class="" href="#"><span><iconify-icon icon="solar:bag-3-linear" width="24"
+                          height="24"></iconify-icon></span></a>
+                  </div>
+                </div>
+
+                <div class="icons">
+                  <ul>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:heart-outline" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                    <li>
+                      <button data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Tooltip on left">
+                        <iconify-icon icon="solar:eye-linear" width="24" height="24"></iconify-icon>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+          <!-- end product card 4 -->
+
+        </div>
+      </div>
+
+
+
+
+
+      <ul class="js-pagination">
+
+      </ul>
+
+    </div>
+  </div>
+  <!-- ================ HTML all products END ================ -->
+
+
+  <!-- newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <h4>Subcribe to our Newsletter</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, accusantium.</p>
+        </div>
+        <div class="col-lg-5">
+          <form action="">
+            <input type="text" name="" id="" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-2 icons">
+          <span><iconify-icon icon="gg:facebook" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="fa6-brands:x-twitter" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+          <span><iconify-icon icon="akar-icons:instagram-fill" width="24" height="24"></iconify-icon></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newsletter end -->
+
+
   <!-- mobile footer -->
   <section id="mobile_footer" class="d-lg-none">
     <div class="container">
@@ -434,134 +1240,146 @@
 
 
 
-    <!-- footer -->
-    <footer id="footer">
-      <div class="container">
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container">
 
-        <div class="row first_row">
+      <div class="row first_row">
 
-          <div class="col-lg-4 first">
-            <a href=""><img src="assets/images/Logo2.png" alt=""></a>
-            <p class="contains">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
-            <p><b>(219) 555-0114</b> or <b>ecobazar@gmail.com</b></p>
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>My Account</h4>
-              </div>
-
-              <ul>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Order History</a></li>
-                <li><a href="">Shoping Cart</a></li>
-                <li><a href="">Wishlist</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Help</h4>
-              </div>
-
-              <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Faqs</a></li>
-                <li><a href="">Terms & Condition</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Proxy</h4>
-              </div>
-
-              <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">Track Order</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-2 others">
-
-            <div>
-
-              <div class="head">
-                <h4>Categories</h4>
-              </div>
-
-              <ul>
-                <li><a href="">Fruit & Vegetables</a></li>
-                <li><a href="">Meat & Fish</a></li>
-                <li><a href="">Bread & Bakery</a></li>
-                <li><a href="#">Beauty & Health</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-        
+        <div class="col-lg-4 first">
+          <a href=""><img src="assets/images/Logo2.png" alt=""></a>
+          <p class="contains">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum
+            magna congue nec.</p>
+          <p><b>(219) 555-0114</b> or <b>ecobazar@gmail.com</b></p>
         </div>
 
-        <div class="row second_row justify-content-between">
-          <div class="col-lg-4 order-lg-1 order-2">
-            <div class="footer_title">
-              <p>Ecobazar eCommerce © 2025. All Rights Reserved.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 order-lg-2 order-1">
-            <div class="payment">
-              <a href="#"><img src="assets/images/payment/1. ApplePay.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/2. Visa.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/3. Discover.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/4. Mastercard.png" alt=""></a>
-              <a href="#"><img src="assets/images/payment/5. SPay.png" alt=""></a>
+        <div class="col-lg-2 others">
 
+          <div>
+
+            <div class="head">
+              <h4>My Account</h4>
             </div>
+
+            <ul>
+              <li><a href="">My Account</a></li>
+              <li><a href="">Order History</a></li>
+              <li><a href="">Shoping Cart</a></li>
+              <li><a href="">Wishlist</a></li>
+            </ul>
+
           </div>
+
         </div>
-        
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Help</h4>
+            </div>
+
+            <ul>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Faqs</a></li>
+              <li><a href="">Terms & Condition</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Proxy</h4>
+            </div>
+
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Track Order</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2 others">
+
+          <div>
+
+            <div class="head">
+              <h4>Categories</h4>
+            </div>
+
+            <ul>
+              <li><a href="">Fruit & Vegetables</a></li>
+              <li><a href="">Meat & Fish</a></li>
+              <li><a href="">Bread & Bakery</a></li>
+              <li><a href="#">Beauty & Health</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
       </div>
-    </footer>
-    <!-- footer end -->
+
+      <div class="row second_row justify-content-between">
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="footer_title">
+            <p>Ecobazar eCommerce © 2026. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 order-lg-2 order-1">
+          <div class="payment">
+            <a href="#"><img src="assets/images/payment/1. ApplePay.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/2. Visa.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/3. Discover.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/4. Mastercard.png" alt=""></a>
+            <a href="#"><img src="assets/images/payment/5. SPay.png" alt=""></a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- footer end -->
 
 
 
   <!-- jquery -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>
-  <!-- iconify icons -->
-  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
   <!-- countdown jquery -->
   <script src="assets/js/jquery.countdown.min.js"></script>
+
+  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
   <!-- bootstrap js -->
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <!-- slick js -->
   <script src="assets/js/slick.min.js"></script>
+  <!-- zoomsl -->
+  <script src="assets/js/zoomsl.js"></script>
+  <!-- touchspin -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-touchspin/4.3.0/jquery.bootstrap-touchspin.min.js"></script>
   <!-- filter -->
   <script src="assets/js/category-filter.js"></script>
   <!-- custom js -->
   <script src="assets/js/app.js"></script>
+
+  <!-- <script src="assets/js/anitabs.js"></script> -->
+  <script src="assets/js/pagination.js"></script>
+  <!-- <script src="assets/js/syotimer.examples.js"></script> -->
+  <script src="assets/js/venobox.min.js"></script>
+
 </body>
 
 </html>
